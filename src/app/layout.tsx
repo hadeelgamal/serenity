@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-serenity-off-white text-serenity-blue-dark`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   )

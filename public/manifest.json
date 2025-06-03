@@ -1,0 +1,21 @@
+{
+  "name": "Hanaa Abdulkarim | Integrative Hypnotherapist",
+  "short_name": "Hanaa Abdulkarim",
+  "description": "Supportive, research-based therapy grounded in both science and soul. Specializing in integrative hypnotherapy, mind-body sessions, and breathwork.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFBF7",
+  "theme_color": "#7A9D7A",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+} 

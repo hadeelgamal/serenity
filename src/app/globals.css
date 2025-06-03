@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply font-body text-text-dark bg-bg-violet;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-text-dark;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .section-alt {
+    @apply py-16 md:py-24 bg-bg-violet;
+  }
+
+  .heading-1 {
+    @apply font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-text-dark;
+  }
+
+  .heading-2 {
+    @apply font-display text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-text-dark;
+  }
+
+  .heading-3 {
+    @apply font-display text-xl md:text-2xl lg:text-3xl font-bold mb-3 text-text-dark;
+  }
+
+  .body-text {
+    @apply font-body text-base md:text-lg text-text-dark;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary/90 transition-colors duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-primary text-base font-medium rounded-md text-text-dark bg-transparent hover:bg-primary/10 transition-colors duration-200;
+  }
+}
+
+/* Video Hero */
+.video-container {
+  @apply fixed top-0 left-0 w-screen h-screen;
+}
+
+.video-container video {
+  @apply absolute top-0 left-0 w-full h-full object-cover;
+}
+
+.video-overlay {
+  @apply absolute inset-0 bg-black/30;
+}
+
+.content-wrapper {
+  @apply relative z-10 flex items-center justify-center min-h-screen;
+} 
